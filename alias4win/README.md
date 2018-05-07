@@ -15,7 +15,7 @@ Windows Subsystem for Linux(WSL)上で整備したLinuxの実行環境からWind
 gitからcloneする
 ~~~
 cd
-git clone https://github.com/kazu-reason/hoge.git
+git clone https://github.com/kazu-reason/.git
 ~~~
 
 vimで.bashrcを開く
