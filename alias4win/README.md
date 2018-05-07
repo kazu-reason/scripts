@@ -24,6 +24,10 @@ vim ~/.bashrc
 ~~~
 .bashrcに追記する
 ~~~sh
+if [ -f "$HOME/scripts/alias4win/alias4win.sh" ]; then
+    . "$HOME/scripts/alias4win/alias4win.sh"
+fi
+
 if [ -f "$HOME/.aliases/alias4win" ]; then
     . "$HOME/.aliases/alias4win"
 fi
