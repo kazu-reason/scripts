@@ -1,3 +1,3 @@
 #current scripts
 - alias4windows
-  -[README.md](/README.md)
+  -[README.md](/alias4win/README.md)
