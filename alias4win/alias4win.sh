@@ -1,3 +1,5 @@
+#!/bin/bash
+
 WINCMD="$HOME/scripts/alias4win/wincmd.txt"
 ALIAS="$HOME/.aliases/alias4win"
 

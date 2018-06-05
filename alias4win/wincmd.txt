@@ -1,3 +1,4 @@
 explorer
 clip
 control
+cmd
