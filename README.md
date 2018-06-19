@@ -1,3 +1,7 @@
 # current scripts
-- alias4windows
+- alias4win
   -[README.md](/alias4win/README.md)
+- lesscsv
+  -[README.md](/lesscsv/README.md)
+- texenv
+  -[README.md](/texenv/README.md)
