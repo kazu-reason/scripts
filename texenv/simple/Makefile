@@ -1,7 +1,7 @@
 .SUFFIXES: .tex .dvi .aux .log .toc .lof .lot .pdf .ps .bbl .bib .blg
 FILE=report
 
-TEX=platex
+TEX=uplatex
 BIBTEX=pbibtex
 TEX2PDF=ptex2pdf
 
@@ -45,4 +45,4 @@ BIBFLAG = -kanji=utf8
 
 clean:
 	rm -f *~ $(FILE).dvi $(FILE).aux $(FILE).toc $(FILE).out \
-	$(FILE).log $(FILE).pdf $(FILE).ps $(FILE).blg
+	$(FILE).log $(FILE).ps $(FILE).blg
