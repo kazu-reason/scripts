@@ -1,5 +1,5 @@
 import pandas as pd
-imput_file = 'desharnais.csv'
+imput_file = # {{input_file}}
 output_file = 'output.csv'
 
 csv = pd.read_csv(imput_file)

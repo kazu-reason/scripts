@@ -1,6 +1,6 @@
 import csv
 import sys
-import os.path
+import os
 
 args = sys.argv
 
@@ -14,7 +14,7 @@ if not os.path.isfile(args[1]):
 
 input_file = args[1]
 output_file = 'editCSV.py'
-this_path = '/Users/naoki/scripts/editCSV'
+this_path = '{0}/scripts/editCSV'.format(os.environ['HOME'])
 
 f = open(input_file, 'r')
 reader = csv.reader(f)
@@ -33,8 +33,11 @@ output_code = "output_row = [{0}]".format(output_code[:-2])
 f_template = open('{0}/editCSV.template.py'.format(this_path), 'r')
 f_output = open(output_file, 'w')
 for row in f_template:
-    # '# {{output}}' の行を検索し，置換
-    if row.find('# {{output}}'):
+    # '# {{input_file}}' の行を検索し，置換
+    if row.find('# {{input_file}}'):
+        row = row.replace('# {{input_file}}', "'{0}'".format(input_file))
+    # '# {{output_row}}' の行を検索し，置換
+    if row.find('# {{output_row}}'):
         row = row.replace('# {{output_row}}', output_code)
     f_output.write(row)
 f_output.close()
